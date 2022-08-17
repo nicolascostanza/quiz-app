@@ -19,6 +19,13 @@ function App() {
     }
     setTiempoRestante(10);
   }
+  const init = () => {
+    setPreguntaActual(0);
+    setPuntuacion(0);
+    setIsFinished(false);
+    setTiempoRestante(10);
+    setAnswerShow(false);
+  }
 
   useEffect(() => {
     const intervalo = setInterval(() => {
@@ -44,9 +51,7 @@ function App() {
             </button>
             <button
               onClick={() => {
-                setIsFinished(false);
-                setAnswerShow(true);
-                setPreguntaActual(0);
+                init()
               }}
             >
               View answers
