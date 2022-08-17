@@ -37,7 +37,7 @@ function App() {
           <div className="buttons-juego-terminado">
             <button
               onClick={() => {
-                window.location.href = "/";
+                window.location.href = "https://nicolascostanza.github.io/quiz-app/";
               }}
             >
               Play again
