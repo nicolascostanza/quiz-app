@@ -85,7 +85,7 @@ function App() {
             className="btn-final-juego"
             onClick={() => {
               if (preguntaActual === questions.length - 1) {
-                window.location.href = "/";
+                init()
               } else {
                 setPreguntaActual(preguntaActual + 1);
               }
