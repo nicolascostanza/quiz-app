@@ -25,7 +25,7 @@ function App() {
     setIsFinished(false);
     setTiempoRestante(10);
     setAnswerShow(false);
-  }
+  };
 
   useEffect(() => {
     const intervalo = setInterval(() => {
@@ -44,14 +44,16 @@ function App() {
           <div className="buttons-juego-terminado">
             <button
               onClick={() => {
-                window.location.href = "/quiz-app/";
+                init();
               }}
             >
               Play again
             </button>
             <button
               onClick={() => {
-                init()
+                setIsFinished(false);
+                setAnswerShow(true);
+                setPreguntaActual(0);
               }}
             >
               View answers
